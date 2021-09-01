@@ -35,3 +35,91 @@ body {
   align-items: center;
   justify-content: flex-start;
 }
+
+h1 {
+  font-weight: 500;
+}
+
+.task-input {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.25em;
+  height: 2.5em;
+}
+
+#input {
+  border: none;
+  width: 85%;
+  max-width: 26.5625em;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-indent: 22px;
+}
+
+#add-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #6fda9a;
+  font-size: 1.3125rem;
+  padding: 0.8125em 1.25em;
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.tasks {
+  margin-top: 2.625em;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 45%;
+}
+
+.single-task {
+  background-color: white;
+  color: #867e7e;
+  height: 2.75em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.single-task p {
+  margin-left: 1em;
+}
+
+.task-buttons {
+  margin-right: 1.5625em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1.875em;
+  width: 7.68575em;
+}
+
+.edit-btn {
+  cursor: pointer;
+  background-color: #6fc0da;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 100%;
+  font-size: 0.8125rem;
+  width: 4.4615em;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #da6fa2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 100%;
+  font-size: 0.8125rem;
+  width: 4.4615em;
+}
