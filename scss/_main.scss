@@ -1,18 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-}
-
 .main {
   width: 60%;
   max-width: 34.6875em;
@@ -21,23 +6,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  h1 {
+    font-weight: 500;
+  }
 }
 
 .container {
-  background-color: #e0edfa;
-  border: solid 1px #866f6f;
+  background-color: $lightBlue;
   border-radius: 9px;
-  border: solid 1px #866f6f;
+  border: solid 1px $lightBrown;
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-}
-
-h1 {
-  font-weight: 500;
 }
 
 .task-input {
@@ -61,7 +45,7 @@ h1 {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: #6fda9a;
+  background-color: $green;
   font-size: 1.3125rem;
   padding: 0.8125em 1.25em;
   display: flex;
@@ -70,6 +54,7 @@ h1 {
 }
 
 .tasks {
+  list-style: none;
   margin-top: 2.625em;
   width: 90%;
   display: flex;
@@ -79,19 +64,21 @@ h1 {
 }
 
 .single-task {
-  background-color: white;
-  color: #867e7e;
+  background-color: $white;
+  color: $lightGray;
   height: 2.75em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 5px;
   width: 100%;
+
+  p {
+    margin-left: 1em;
+  }
 }
 
-.single-task p {
-  margin-left: 1em;
-}
+// task's buttons styles
 
 .task-buttons {
   margin-right: 1.5625em;
@@ -102,24 +89,22 @@ h1 {
   width: 7.68575em;
 }
 
-.edit-btn {
+.btn {
   cursor: pointer;
-  background-color: #6fc0da;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  height: 100%;
-  font-size: 0.8125rem;
-  width: 4.4615em;
-}
 
-.delete-btn {
-  cursor: pointer;
-  background-color: #da6fa2;
-  color: white;
   border: none;
   border-radius: 5px;
   height: 100%;
   font-size: 0.8125rem;
   width: 4.4615em;
+
+  &__edit {
+    background-color: $blue;
+    color: $white;
+  }
+
+  &__delete {
+    background-color: $red;
+    color: $white;
+  }
 }

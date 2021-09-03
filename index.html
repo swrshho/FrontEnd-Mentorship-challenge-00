@@ -4,43 +4,44 @@
   <meta charset="UTF-8">
   <meta name="author" content="Soroush Hosseini">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/dist/style.css">
   <title>Task Manager</title>
 </head>
 <body>
   <main class="main">
     <h1>Task Manager</h1>
     <section class="container">
-      <article class="task-input">
+      <div class="task-input">
         <input id="input" type="text" placeholder="Title">
         <button id="add-btn">ADD</button>
-      </article>
-
-      <div class="tasks">
-        <article class="single-task">
-          <p>Task 1</p>
-          <div class="task-buttons">
-            <button class="edit-btn">Edit</button>
-            <button class="delete-btn">Delete</button>
-          </div>
-        </article>
-        <article class="single-task">
-          <p>Task 2</p>
-          <div class="task-buttons">
-            <button class="edit-btn">Edit</button>
-            <button class="delete-btn">Delete</button>
-          </div>
-        </article>
-        <article class="single-task">
-          <p>Task 3</p>
-          <div class="task-buttons">
-            <button class="edit-btn">Edit</button>
-            <button class="delete-btn">Delete</button>
-          </div>
-        </article>
       </div>
 
-      
+      <ul class="tasks">
+        <li class="single-task">
+          <p>Task 1</p>
+          <div class="task-buttons">
+            <button class="btn btn__edit">Edit</button>
+            <button class="btn btn__delete">Delete</button>
+          </div>
+        </li>
+
+        <li class="single-task">
+          <p>Task 2</p>
+          <div class="task-buttons">
+            <button class="btn btn__edit">Edit</button>
+            <button class="btn btn__delete">Delete</button>
+          </div>
+        </li>
+
+        <li class="single-task">
+          <p>Task 3</p>
+          <div class="task-buttons">
+            <button class="btn btn__edit">Edit</button>
+            <button class="btn btn__delete">Delete</button>
+          </div>
+        </li>
+
+      </ul>
 
     </section>
   </main>
