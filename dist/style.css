@@ -25,7 +25,7 @@ body {
   width: 60%;
   max-width: 34.6875em;
   min-width: 18.75em;
-  height: 22.0625em;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +46,6 @@ body {
   background-color: #e0edfa;
   border-radius: 9px;
   border: solid 1px #866f6f;
-  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,7 +101,7 @@ body {
 
 .tasks {
   list-style: none;
-  margin-top: 2.625em;
+  margin: 2.625em 0;
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,10 +110,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 45%;
+  min-height: 17rem;
+}
+
+.tasks > :not(:last-child) {
+  margin-bottom: 0.5rem;
 }
 
 .single-task {
