@@ -60,10 +60,3 @@ editBtn.forEach((e) => {
     }
   })
 })
-
-// const doneBtn = document.querySelectorAll('.btn__done');
-// doneBtn.forEach((e) => {
-//   e.addEventListener('click', () => {
-//     console.log('hi');
-//   })
-// })
